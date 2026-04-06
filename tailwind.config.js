@@ -6,9 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'emerald': {
-          900: '#0D5C4A',
-          700: '#1a7e5c',
+        'navy': {
+          900: '#1a2240',
+          800: '#2c3e50',
+          700: '#34495e',
         },
         'gold': '#D4AF37',
         'cream': '#F5F1E8',
