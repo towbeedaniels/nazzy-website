@@ -12,11 +12,13 @@ export const useAppContext = () => {
 
 export const AppProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [wishlist, setWishlist] = useState([]);
   const [user, setUser] = useState(null);
   const [searchActive, setSearchActive] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isWishlistOpen, setIsWishlistOpen] = useState(false);
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -49,6 +51,23 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const addToWishlist = (product) => {
+    setWishlist((prev) => {
+      if (prev.find((item) => item.id === product.id)) {
+        return prev.filter((item) => item.id !== product.id);
+      }
+      return [...prev, product];
+    });
+  };
+
+  const removeFromWishlist = (productId) => {
+    setWishlist((prev) => prev.filter((item) => item.id !== productId));
+  };
+
+  const isInWishlist = (productId) => {
+    return wishlist.some((item) => item.id === productId);
+  };
+
   const cartTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -70,6 +89,10 @@ export const AppProvider = ({ children }) => {
         updateCartQuantity,
         cartTotal,
         cartCount,
+        wishlist,
+        addToWishlist,
+        removeFromWishlist,
+        isInWishlist,
         user,
         loginUser,
         logoutUser,
@@ -81,6 +104,8 @@ export const AppProvider = ({ children }) => {
         setIsUserMenuOpen,
         isCartOpen,
         setIsCartOpen,
+        isWishlistOpen,
+        setIsWishlistOpen,
       }}
     >
       {children}
