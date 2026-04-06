@@ -12,6 +12,13 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Logo */}
+        <img
+          src="/logo-light.png"
+          alt="Nazzy Stichez"
+          className="h-32 w-auto mx-auto mb-8 animate-fade-in"
+        />
+
         <h2 className="font-playfair text-5xl md:text-7xl text-gold mb-4 tracking-wide">
           Precision in Every Stitch
         </h2>

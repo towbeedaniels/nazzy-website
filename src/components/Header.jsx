@@ -63,9 +63,13 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="font-playfair text-2xl md:text-3xl tracking-widest">
-              <span className="text-gold">NAZZY</span> STICHEZ
-            </h1>
+            <img
+              src="/logo-light.png"
+              alt="Nazzy Stichez"
+              className="h-16 w-auto hover:opacity-80 transition cursor-pointer"
+              onClick={() => navigateTo('home')}
+              title="Back to Home"
+            />
           </div>
 
           {/* Desktop Navigation */}

@@ -12,9 +12,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-playfair text-2xl text-gold mb-4 tracking-wider">
-              NAZZY STICHEZ
-            </h3>
+            <img
+              src="/logo-light.png"
+              alt="Nazzy Stichez"
+              className="h-20 w-auto mb-4 hover:opacity-80 transition cursor-pointer"
+              onClick={() => navigateTo('home')}
+              title="Back to Home"
+            />
             <p className="text-cream/70 mb-6 leading-relaxed">
               Bespoke elegance meets African heritage. Precision in every stitch,
               excellence in every creation.

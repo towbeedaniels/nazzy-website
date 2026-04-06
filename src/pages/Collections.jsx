@@ -98,6 +98,11 @@ export default function Collections() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="mb-12">
+          <img
+            src="/logo-dark.png"
+            alt="Nazzy Stichez"
+            className="h-24 w-auto mx-auto mb-6"
+          />
           <div className="flex justify-center mb-4">
             <div className="accent-line"></div>
           </div>

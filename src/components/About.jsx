@@ -25,6 +25,11 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
+          <img
+            src="/logo-dark.png"
+            alt="Nazzy Stichez"
+            className="h-24 w-auto mx-auto mb-6"
+          />
           <div className="flex justify-center mb-4">
             <div className="accent-line"></div>
           </div>
