@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
+import { usePageContext } from '../context/PageContext';
 import { searchProducts } from '../data/products';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { navigateTo, currentPage } = usePageContext();
   const {
     searchActive,
     setSearchActive,
@@ -23,11 +25,11 @@ export default function Header() {
   const [loginForm, setLoginForm] = useState({ email: '', password: '' });
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Collections', href: '#lookbook' },
-    { label: 'Bespoke', href: '#services' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#booking' },
+    { label: 'Home', href: '#home', action: () => navigateTo('home') },
+    { label: 'Collections', href: '#collections', action: () => navigateTo('collections') },
+    { label: 'Bespoke', href: '#services', action: null },
+    { label: 'About', href: '#about', action: null },
+    { label: 'Contact', href: '#booking', action: null },
   ];
 
   const handleSearch = (query) => {
@@ -69,13 +71,23 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-cream hover:text-gold transition duration-300 font-montserrat text-sm tracking-wide"
-              >
-                {item.label}
-              </a>
+              item.action ? (
+                <button
+                  key={item.label}
+                  onClick={item.action}
+                  className="text-cream hover:text-gold transition duration-300 font-montserrat text-sm tracking-wide"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-cream hover:text-gold transition duration-300 font-montserrat text-sm tracking-wide"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
           </nav>
 
@@ -259,14 +271,27 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 space-y-3">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block text-cream hover:text-gold transition py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </a>
+              item.action ? (
+                <button
+                  key={item.label}
+                  onClick={() => {
+                    item.action();
+                    setIsMenuOpen(false);
+                  }}
+                  className="block w-full text-left text-cream hover:text-gold transition py-2"
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block text-cream hover:text-gold transition py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <a href="#booking" className="w-full button-gold mt-4 inline-block text-center">
               Book Consultation

@@ -11,6 +11,7 @@ import Booking from './components/Booking';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import Wishlist from './components/Wishlist';
+import Collections from './pages/Collections';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import ShippingReturns from './pages/ShippingReturns';
@@ -43,6 +44,8 @@ function AppContent() {
           <About />
           <Booking />
         </>
+      ) : currentPage === 'collections' ? (
+        <Collections />
       ) : currentPage === 'privacy' ? (
         <PrivacyPolicy />
       ) : currentPage === 'terms' ? (

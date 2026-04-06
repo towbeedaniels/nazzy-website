@@ -48,9 +48,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#lookbook" className="text-cream/70 hover:text-gold transition">
+                <button
+                  onClick={() => navigateTo('collections')}
+                  className="text-cream/70 hover:text-gold transition bg-none border-none p-0 font-montserrat"
+                >
                   Collections
-                </a>
+                </button>
               </li>
               <li>
                 <a href="#services" className="text-cream/70 hover:text-gold transition">
