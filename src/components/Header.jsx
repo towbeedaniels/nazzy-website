@@ -16,6 +16,7 @@ export default function Header() {
     logoutUser,
     isUserMenuOpen,
     setIsUserMenuOpen,
+    wishlist,
   } = useAppContext();
 
   const [searchResults, setSearchResults] = useState([]);
@@ -225,6 +226,20 @@ export default function Header() {
                 </span>
               )}
             </button>
+
+            {/* Wishlist */}
+            <a
+              href="#lookbook"
+              className="text-cream hover:text-gold transition relative"
+              title="Wishlist"
+            >
+              ♡
+              {wishlist.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-gold text-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  {wishlist.length}
+                </span>
+              )}
+            </a>
 
             <a href="#booking" className="button-gold">Book Consultation</a>
           </div>

@@ -10,6 +10,7 @@ import About from './components/About';
 import Booking from './components/Booking';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
+import Wishlist from './components/Wishlist';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import ShippingReturns from './pages/ShippingReturns';
@@ -33,6 +34,7 @@ function AppContent() {
     <div className="App bg-cream">
       <Header />
       <Cart />
+      <Wishlist />
       {currentPage === 'home' ? (
         <>
           <Hero />

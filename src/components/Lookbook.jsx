@@ -5,7 +5,7 @@ import { products } from '../data/products';
 export default function Lookbook() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const { addToCart } = useAppContext();
+  const { addToCart, addToWishlist, isInWishlist } = useAppContext();
 
   const filteredItems =
     selectedCategory === 'all'
@@ -83,15 +83,31 @@ export default function Lookbook() {
                     <span className="text-cream/70 text-xs">({item.reviews})</span>
                   </div>
                 </div>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleAddToCart(item);
-                  }}
-                  className="self-start mt-4 bg-gold text-dark font-semibold px-4 py-2 rounded-sm hover:bg-opacity-90 transition uppercase text-xs tracking-wider"
-                >
-                  Add to Cart
-                </button>
+                <div className="flex gap-2 mt-4">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleAddToCart(item);
+                    }}
+                    className="flex-1 bg-gold text-dark font-semibold px-4 py-2 rounded-sm hover:bg-opacity-90 transition uppercase text-xs tracking-wider"
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      addToWishlist(item);
+                    }}
+                    className={`px-4 py-2 rounded-sm transition text-sm ${
+                      isInWishlist(item.id)
+                        ? 'bg-gold text-dark'
+                        : 'bg-dark/50 text-gold hover:bg-dark'
+                    }`}
+                    title="Add to Wishlist"
+                  >
+                    ♡
+                  </button>
+                </div>
               </div>
             </div>
           ))}
@@ -131,6 +147,14 @@ export default function Lookbook() {
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
+                  </button>
+
+                  <button
+                    onClick={() => addToWishlist(selectedProduct)}
+                    className="absolute top-4 left-4 text-dark/50 hover:text-dark text-2xl"
+                    title="Add to Wishlist"
+                  >
+                    {isInWishlist(selectedProduct.id) ? '❤' : '♡'}
                   </button>
 
                   <div>
