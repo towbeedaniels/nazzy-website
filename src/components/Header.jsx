@@ -66,7 +66,7 @@ export default function Header() {
             <img
               src="/logo-light.png"
               alt="Nazzy Stichez"
-              className="h-16 w-auto hover:opacity-80 transition cursor-pointer"
+              className="h-12 md:h-14 w-auto hover:opacity-80 transition cursor-pointer"
               onClick={() => navigateTo('home')}
               title="Back to Home"
             />

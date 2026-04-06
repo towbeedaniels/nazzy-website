@@ -28,7 +28,7 @@ export default function About() {
           <img
             src="/logo-dark.png"
             alt="Nazzy Stichez"
-            className="h-24 w-auto mx-auto mb-6"
+            className="h-28 md:h-32 w-auto mx-auto mb-8"
           />
           <div className="flex justify-center mb-4">
             <div className="accent-line"></div>

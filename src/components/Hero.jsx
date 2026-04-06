@@ -16,7 +16,7 @@ export default function Hero() {
         <img
           src="/logo-light.png"
           alt="Nazzy Stichez"
-          className="h-32 w-auto mx-auto mb-8 animate-fade-in"
+          className="h-40 md:h-56 w-auto mx-auto mb-12 animate-fade-in drop-shadow-lg"
         />
 
         <h2 className="font-playfair text-5xl md:text-7xl text-gold mb-4 tracking-wide">

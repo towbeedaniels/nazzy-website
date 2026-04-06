@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               src="/logo-light.png"
               alt="Nazzy Stichez"
-              className="h-20 w-auto mb-4 hover:opacity-80 transition cursor-pointer"
+              className="h-28 md:h-32 w-auto mb-6 hover:opacity-80 transition cursor-pointer"
               onClick={() => navigateTo('home')}
               title="Back to Home"
             />
