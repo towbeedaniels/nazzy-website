@@ -73,27 +73,27 @@ export default function Footer() {
             <h4 className="font-playfair text-lg text-gold mb-6">Services</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-cream/70 hover:text-gold transition">
+                <a href="#services" className="text-cream/70 hover:text-gold transition">
                   Custom Tailoring
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cream/70 hover:text-gold transition">
+                <a href="#lookbook" className="text-cream/70 hover:text-gold transition">
                   Ready-to-Wear
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cream/70 hover:text-gold transition">
+                <a href="#services" className="text-cream/70 hover:text-gold transition">
                   Bridal Alterations
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cream/70 hover:text-gold transition">
+                <a href="#booking" className="text-cream/70 hover:text-gold transition">
                   Consultations
                 </a>
               </li>
               <li>
-                <a href="#" className="text-cream/70 hover:text-gold transition">
+                <a href="#booking" className="text-cream/70 hover:text-gold transition">
                   Gift Certificates
                 </a>
               </li>
@@ -132,13 +132,13 @@ export default function Footer() {
             Every Stitch.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0 text-sm">
-            <a href="#" className="text-cream/70 hover:text-gold transition">
+            <a href="/privacy" className="text-cream/70 hover:text-gold transition">
               Privacy Policy
             </a>
-            <a href="#" className="text-cream/70 hover:text-gold transition">
+            <a href="/terms" className="text-cream/70 hover:text-gold transition">
               Terms & Conditions
             </a>
-            <a href="#" className="text-cream/70 hover:text-gold transition">
+            <a href="/shipping" className="text-cream/70 hover:text-gold transition">
               Shipping & Returns
             </a>
           </div>
