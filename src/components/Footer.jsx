@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <img
               src="/logo-light.png"
-              alt="Nazzy Stichez"
+              alt="Nazzy Stitchez"
               className="h-28 md:h-32 w-auto mb-6 hover:opacity-80 transition cursor-pointer"
               onClick={() => navigateTo('home')}
               title="Back to Home"
@@ -137,7 +137,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-cream/70 text-sm">
-            © {currentYear} Nazzy Stichez. All rights reserved. | Precision in
+            © {currentYear} Nazzy Stitchez. All rights reserved. | Precision in
             Every Stitch.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0 text-sm">

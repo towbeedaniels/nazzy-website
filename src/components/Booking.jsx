@@ -42,7 +42,7 @@ export default function Booking() {
             <div className="w-20 h-1 bg-gold"></div>
           </div>
           <h2 className="font-playfair text-4xl md:text-5xl text-gold font-bold mb-4">
-            Experience Nazzy Stichez
+            Experience Nazzy Stitchez
           </h2>
           <p className="text-cream/80 text-lg">
             Book Your Consultation or Explore Our Store
@@ -281,7 +281,7 @@ export default function Booking() {
               </h3>
               <div className="space-y-6">
                 <p className="text-cream/90 italic">
-                  "Nazzy Stichez transformed my vision into reality. The attention
+                  "Nazzy Stitchez transformed my vision into reality. The attention
                   to detail is unmatched!"
                 </p>
                 <p className="text-gold font-semibold">- Amara K.</p>

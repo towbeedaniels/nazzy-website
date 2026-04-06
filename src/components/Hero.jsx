@@ -15,7 +15,7 @@ export default function Hero() {
         {/* Logo */}
         <img
           src="/logo-light.png"
-          alt="Nazzy Stichez"
+          alt="Nazzy Stitchez"
           className="h-40 md:h-56 w-auto mx-auto mb-12 animate-fade-in drop-shadow-lg"
         />
 

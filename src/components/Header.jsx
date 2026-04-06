@@ -65,7 +65,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <img
               src="/logo-light.png"
-              alt="Nazzy Stichez"
+              alt="Nazzy Stitchez"
               className="h-12 md:h-14 w-auto hover:opacity-80 transition cursor-pointer"
               onClick={() => navigateTo('home')}
               title="Back to Home"

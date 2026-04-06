@@ -75,7 +75,7 @@ export default function Services() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h3 className="font-playfair text-3xl text-gold mb-4">
-                Experience Nazzy Stichez: Personalized Excellence
+                Experience Nazzy Stitchez: Personalized Excellence
               </h3>
               <p className="text-cream/80 mb-6 leading-relaxed">
                 Book a consultation with our expert team to discuss your vision,

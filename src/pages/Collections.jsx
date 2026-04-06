@@ -100,7 +100,7 @@ export default function Collections() {
         <div className="mb-12">
           <img
             src="/logo-dark.png"
-            alt="Nazzy Stichez"
+            alt="Nazzy Stitchez"
             className="h-28 md:h-32 w-auto mx-auto mb-8"
           />
           <div className="flex justify-center mb-4">

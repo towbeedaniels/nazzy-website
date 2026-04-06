@@ -27,13 +27,13 @@ export default function About() {
         <div className="text-center mb-16">
           <img
             src="/logo-dark.png"
-            alt="Nazzy Stichez"
+            alt="Nazzy Stitchez"
             className="h-28 md:h-32 w-auto mx-auto mb-8"
           />
           <div className="flex justify-center mb-4">
             <div className="accent-line"></div>
           </div>
-          <h2 className="section-title mb-4">About Nazzy Stichez</h2>
+          <h2 className="section-title mb-4">About Nazzy Stitchez</h2>
           <p className="text-dark/70 text-lg">Our Story of Elegance and Excellence</p>
         </div>
 
@@ -64,7 +64,7 @@ export default function About() {
           <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
             <img
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
-              alt="Nazzy Stichez Atelier"
+              alt="Nazzy Stitchez Atelier"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-dark/40 to-transparent"></div>

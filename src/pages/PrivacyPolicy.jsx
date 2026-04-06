@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
               1. Information We Collect
             </h2>
             <p className="mb-3">
-              At Nazzy Stichez, we collect information you voluntarily provide, such as:
+              At Nazzy Stitchez, we collect information you voluntarily provide, such as:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Contact information (name, email, phone number, address)</li>
