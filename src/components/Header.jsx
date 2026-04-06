@@ -5,7 +5,7 @@ import { searchProducts } from '../data/products';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { navigateTo, currentPage } = usePageContext();
+  const { navigateTo } = usePageContext();
   const {
     searchActive,
     setSearchActive,
