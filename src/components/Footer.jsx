@@ -1,7 +1,9 @@
 import React from 'react';
+import { usePageContext } from '../context/PageContext';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { navigateTo } = usePageContext();
 
   return (
     <footer className="bg-dark text-cream">
@@ -132,15 +134,15 @@ export default function Footer() {
             Every Stitch.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0 text-sm">
-            <a href="/privacy" className="text-cream/70 hover:text-gold transition">
+            <button onClick={() => navigateTo('privacy')} className="text-cream/70 hover:text-gold transition">
               Privacy Policy
-            </a>
-            <a href="/terms" className="text-cream/70 hover:text-gold transition">
+            </button>
+            <button onClick={() => navigateTo('terms')} className="text-cream/70 hover:text-gold transition">
               Terms & Conditions
-            </a>
-            <a href="/shipping" className="text-cream/70 hover:text-gold transition">
+            </button>
+            <button onClick={() => navigateTo('shipping')} className="text-cream/70 hover:text-gold transition">
               Shipping & Returns
-            </a>
+            </button>
           </div>
         </div>
       </div>
