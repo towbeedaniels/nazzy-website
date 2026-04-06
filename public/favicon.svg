@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#1a2240" rx="8"/>
+  
+  <!-- Gold circle accent -->
+  <circle cx="32" cy="15" r="6" fill="#D4AF37"/>
+  
+  <!-- Threading needle element -->
+  <g stroke="#D4AF37" stroke-width="2" fill="none" stroke-linecap="round">
+    <!-- Needle -->
+    <line x1="32" y1="25" x2="32" y2="50"/>
+    <!-- Thread curved left -->
+    <path d="M 32 28 Q 20 35 22 45"/>
+    <!-- Thread curved right -->
+    <path d="M 32 28 Q 44 35 42 45"/>
+  </g>
+  
+  <!-- Cream accent dots (stitch marks) -->
+  <circle cx="22" cy="45" r="2" fill="#F5F1E8"/>
+  <circle cx="42" cy="45" r="2" fill="#F5F1E8"/>
+</svg>

@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Nazzy Stitchez",
+  "name": "Nazzy Stitchez - Luxury Bespoke Fashion & Tailoring",
+  "description": "Premium bespoke tailoring and luxury fashion collections with African heritage influence",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,42 @@
       "type": "image/x-icon"
     },
     {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "scope": "/",
+  "theme_color": "#1a2240",
+  "background_color": "#F5F1E8",
+  "orientation": "portrait-primary",
+  "categories": ["fashion", "shopping", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "logo512.png",
+      "sizes": "512x512",
+      "form_factor": "wide",
+      "type": "image/png"
+    },
+    {
+      "src": "logo192.png",
+      "sizes": "192x192",
+      "form_factor": "narrow",
+      "type": "image/png"
+    }
+  ]
 }
