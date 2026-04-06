@@ -49,7 +49,7 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           {services.map((service) => (
             <div key={service.id} className="group">
-              <div className="bg-emerald-900/30 border border-gold/20 rounded-lg p-8 hover:border-gold/50 transition duration-300 hover:bg-emerald-900/50 h-full">
+              <div className="bg-navy-900/30 border border-gold/20 rounded-lg p-8 hover:border-gold/50 transition duration-300 hover:bg-navy-900/50 h-full">
                 <div className="text-5xl mb-4">{service.icon}</div>
                 <h3 className="font-playfair text-2xl text-gold mb-4">
                   {service.title}
@@ -71,7 +71,7 @@ export default function Services() {
         </div>
 
         {/* Experience Section */}
-        <div className="bg-gradient-to-r from-emerald-900/50 to-transparent border border-gold/30 rounded-lg p-12">
+        <div className="bg-gradient-to-r from-navy-900/50 to-transparent border border-gold/30 rounded-lg p-12 text-cream">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h3 className="font-playfair text-3xl text-gold mb-4">

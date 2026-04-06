@@ -77,7 +77,7 @@ export default function About() {
                 key={idx}
                 className="bg-white border-l-4 border-gold p-6 rounded-sm shadow-lg hover:shadow-xl transition"
               >
-                <h4 className="font-playfair text-xl text-emerald-900 mb-3">
+                <h4 className="font-playfair text-xl text-navy-900 mb-3">
                   {value.title}
                 </h4>
                 <p className="text-dark/70 text-sm leading-relaxed">
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         {/* Team Highlight */}
-        <div className="bg-gradient-to-r from-emerald-900 to-dark rounded-lg p-12 text-cream">
+        <div className="bg-gradient-to-r from-navy-900 to-dark rounded-lg p-12 text-cream">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="font-playfair text-3xl mb-4">
               Meet Our Artisans

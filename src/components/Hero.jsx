@@ -8,7 +8,7 @@ export default function Hero() {
 
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-gold opacity-5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-emerald-700 opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-navy-700 opacity-5 rounded-full blur-3xl"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

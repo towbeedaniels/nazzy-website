@@ -56,7 +56,7 @@ export default function Booking() {
             className={`px-8 py-3 font-montserrat text-sm tracking-wider uppercase rounded-sm transition duration-300 ${
               activeTab === 'consultation'
                 ? 'bg-gold text-dark font-semibold'
-                : 'bg-emerald-900/50 text-cream border border-gold/30 hover:border-gold'
+                : 'bg-navy-900/50 text-cream border border-gold/30 hover:border-gold'
             }`}
           >
             Book Consultation
@@ -66,7 +66,7 @@ export default function Booking() {
             className={`px-8 py-3 font-montserrat text-sm tracking-wider uppercase rounded-sm transition duration-300 ${
               activeTab === 'store'
                 ? 'bg-gold text-dark font-semibold'
-                : 'bg-emerald-900/50 text-cream border border-gold/30 hover:border-gold'
+                : 'bg-navy-900/50 text-cream border border-gold/30 hover:border-gold'
             }`}
           >
             Visit Store
@@ -76,7 +76,7 @@ export default function Booking() {
         {/* Content Container */}
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Form */}
-          <div className="bg-emerald-900/30 border border-gold/20 rounded-lg p-8">
+          <div className="bg-navy-900/30 border border-gold/20 rounded-lg p-8">
             {activeTab === 'consultation' ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <h3 className="font-playfair text-2xl text-gold mb-6">
@@ -275,7 +275,7 @@ export default function Booking() {
               </ul>
             </div>
 
-            <div className="bg-emerald-900/30 border border-gold/20 rounded-lg p-8">
+            <div className="bg-navy-900/30 border border-gold/20 rounded-lg p-8">
               <h3 className="font-playfair text-2xl text-gold mb-4">
                 Client Testimonials
               </h3>
