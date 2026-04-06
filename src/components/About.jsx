@@ -44,13 +44,13 @@ export default function About() {
               Crafting Masterpieces Since 2014
             </h3>
             <p className="text-dark/80 mb-4 leading-relaxed text-lg">
-              Nazzy Stichez was born from a passion for exceptional tailoring and
+              Nazzy Stitchez was born from a passion for exceptional tailoring and
               a deep appreciation for African heritage. What started as a vision
               to blend traditional craftsmanship with contemporary design has
               evolved into a prestigious bespoke fashion brand.
             </p>
             <p className="text-dark/80 mb-4 leading-relaxed text-lg">
-              Each creation from Nazzy Stichez is a testament to our commitment to
+              Each creation from Nazzy Stitchez is a testament to our commitment to
               excellence. We don't just create garments; we craft wearable art that
               tells your unique story and celebrates your individuality.
             </p>
